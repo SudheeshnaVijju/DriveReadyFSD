@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(227, 225, 225);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 1000px;
+}
+.div{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 15px;
+}
+p{
+    color:rgb(169, 169, 169);
+}
+.but{
+    width: 200px;
+    height: 0px;
+    border-style: groove none none none;
+    border-width: 2px;
+    border-color: rgb(127, 127, 251);
+    
+}
+.fa-solid{
+    color: white;
+    background-color: rgb(40, 40, 254);
+    font-size: 40px;
+}
+.a{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(40, 40, 254);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 130px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(40, 40, 254);
+    color: white;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Course Number</th>
+            <th>Course fee</th>
+            <th>Place</th>
+        </tr>
+    </table>
+    <script>
+        var t=document.getElementsByTagName("table")[0];
+        var info=[
+            {
+                name:"java",
+                num:001,
+                fee:5000,
+                place:"rjy"
+            },
+            {
+                name:"java",
+                num:001,
+                fee:5000,
+                place:"rjy"
+            },
+            {
+                name:"java",
+                num:001,
+                fee:5000,
+                place:"rjy"
+            }
+        ];
+        for( var i=0;i<info.length;i++){
+            var tr=document.createElement('tr')
+            for( var k in info[i]){
+                var td=document.createElement('td')
+                td.innerHTML=info[i][k];
+                tr.append(td);
+            }
+            t.append(tr)
+        }
+        t.cellSpacing="3px";
+        t.border="2px";
+
+         
+         console.log(x);
+         var x=10;
+    </script>
+</body>
+</html>

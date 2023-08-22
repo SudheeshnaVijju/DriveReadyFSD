@@ -1,0 +1,57 @@
+h1,h2{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.heading{
+    color: blue;
+}
+#para{
+    color:rgb(78, 8, 8);
+    background-color: rgb(245, 181, 181);
+    font-size: 20px;
+}
+div{
+    background-color: aqua;
+    color: rgb(13, 90, 90);
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+input[type]{
+    color:red;
+}
+input[type="number"]{
+    color: green;
+}
+img[src]{
+    height: 500px;
+    width: 300px;
+    
+}
+button{
+    width: 100px;
+    height: 20px;
+}
+button:hover{
+    width: 130px;
+    height: 30px;
+    background-color: green;
+}
+button:active{
+    background-color: red;
+}
+a:link{
+    color: rgb(4, 122, 83);
+}
+a:visited{
+    color: red;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style>
+        .container{
+           background-color: black;
+        }
+        .col,.col-md-8,.col-md-4,.col-md-1,.col-md-2{
+            background-color: grey;
+            border: 4px solid rgb(5, 0, 0);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        #con{
+            position: relative;
+            left: 100px;
+            width: 900px;
+            
+        }
+        .b{
+            background-color: rgb(158, 156, 156);
+            color: black;
+            border: 1px solid rgb(5, 0, 0);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>BootStrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-danger">span1</div>
+            <div class="col bg-success">span1</div>
+            <div class="col bg-primary">span1</div>
+
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-5 col-xs-12 bg-danger">column1</div>
+            <div class="col-md-4 col-xs-12 bg-success">column2</div>
+            <div class="col-md-3 col-xs-12 bg-primary">column3</div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+            <div class="col">span1</div>
+        </div>
+        <div class="row">
+            <div class="col">span4</div>
+            <div class="col">span4</div>
+            <div class="col">span4</div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">span4</div>
+            <div class="col-md-8">span8</div>
+        </div>
+        <div class="row">
+            <div class="col">span6</div>
+            <div class="col">span6</div>
+        </div>
+        <div class="row">
+            <div class="col">span12</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+            <div class="col">1</div>
+        </div>
+        <div class="row">
+            <div class="col">2</div>
+            <div class="col">2</div>
+            <div class="col">2</div>
+            <div class="col">2</div>
+            <div class="col">2</div>
+            <div class="col">2</div>
+
+        </div>
+        <div class="row">
+            <div class="col">3</div>
+            <div class="col">3</div>
+            <div class="col">3</div>
+            <div class="col">3</div>
+        </div>
+        <div class="row">
+            <div class="col">4</div>
+            <div class="col">4</div>
+            <div class="col">4</div>
+        </div>
+        <div class="row">
+            <div class="col">6</div>
+            <div class="col">6</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">4</div>
+            <div class="col-md-8">8</div>
+        </div>
+        <div class="row">
+            <div class="col">12</div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="con">
+        <div class="row mt-5">
+            <div class="col-md-4" id="h">header</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" id="main">main</div>
+            <div class="offset-1 col-md-1" id="sb">sidebar</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" id="foot">footer</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-2 col-sm-12 b">div1</div>
+            <div class="col-md-8">
+                <div calss="row">
+                    <div class="col-md-6 col-sm-12 b">div2</div>
+                    <div class="col-md-6 col-sm-12 b">div3</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 b">div4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 b">div5</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 b">div6</div>
+        </div>
+    </div>
+    
+</body>
+</html>

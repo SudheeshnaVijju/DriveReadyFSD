@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        #d{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #div{
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            position: relative;
+            top: 150px;
+           
+        }
+        button{
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            
+        }
+        img{
+            width: 600px;
+            height: 300px;
+        }
+        .output_id{
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="d">
+    <div id="div">
+    <button onclick="prev()"><</button>
+    <button onclick="next()">></button>
+    </div>
+    
+    <div id="output_id">
+        <img src="1.jpg"></div></div></center>
+    <script>
+        var but=document.getElementsByTagName('button')
+        var p=document.getElementById('output_id')
+        var k=1;
+        var i=1;
+        setInterval(next, 3000);
+        function next(){
+            if(i<5){
+            var im=++i;
+            p.innerHTML="<img src='"+im+".jpg'>";
+            
+            } 
+            else{
+                i-=5;
+                next();
+            }
+        }
+        function prev(){
+            if(i>1){
+            var im=--i;
+            p.innerHTML="<img src='"+im+".jpg'>";
+            }
+            else{
+                i+=5;
+                prev()
+            }
+        }
+    </script>
+</body>
+</html>

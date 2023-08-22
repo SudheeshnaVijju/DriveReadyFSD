@@ -1,0 +1,31 @@
+img{
+    width: 320px;
+    height: 200px;
+}
+.img,.hrr,a,span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a,span{
+    display: inline;
+}
+.c{
+    padding:50% ;
+}
+.imput-group{
+    border-right: none;
+}
+input{
+    border-left: none;
+}
+.hr{
+    border: 1px solid;
+}
+.b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

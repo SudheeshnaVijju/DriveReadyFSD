@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/dc6622bbd5.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color:rgb(102, 100, 100);
+            margin: 0%;
+            padding: 0%;
+        }
+        table{
+            background-color: black;
+            border-radius: 25px;
+            border: none;
+        }
+        td{
+            text-align: center;
+            font-weight: bold;
+             background-color: rgb(145, 144, 144); 
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            
+        }
+        td:not(#result_id){
+            color: black;
+            font-size: 15px;
+            border-radius: 20%;
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            background-image:linear-gradient(rgb(129, 128, 128), rgb(60, 60, 60));
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+        h3{
+            font-size: 25px;
+        }
+        #eq{
+            background-image:linear-gradient(rgb(252, 252, 115),yellow);
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 100vh;">
+    <h3><b>Basic Calculator</b></h3>
+    <table cellspacing="10" cellpadding="22" >
+        <tr>
+            <td colspan="4" style="height: 50px; text-align: right;" id="result_id" ></td>
+        </tr>
+        <tr>
+            <td onclick="getnum('%')">%</td>
+            <td onclick="getnum('**2')">x<sup>2</sup></td>
+            <td onclick="clearall()">C&nbsp;</td>
+            <td onclick="getnum('<')"><i class="fa-solid fa-delete-left"></i></td>
+        </tr>
+        <tr>
+            <td onclick="getnum('9')">9</td>
+            <td onclick="getnum('8')">8</td>
+            <td onclick="getnum('7')">7</td>
+            <td onclick="getnum('/')"><i class="fa-solid fa-divide"></i></td>
+        </tr>
+        <tr>
+            <td onclick="getnum('6')">6</td>
+            <td onclick="getnum('5')">5</td>
+            <td onclick="getnum('4')">4</td>
+            <td onclick="getnum('*')">X</td>
+        </tr>
+        <tr>
+            <td onclick="getnum('3')">3</td>
+            <td onclick="getnum('2')">2</td>
+            <td onclick="getnum('1')">1</td>
+            <td onclick="getnum('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="getnum('0')">0</td>
+            <td onclick="getnum('.')">.</td>
+            <td onclick="getnum('+')">+</td>
+            <td onclick="getnum('=')" style="background-image:linear-gradient(rgb(156, 251, 239),rgb(6, 94, 72));">=</td>
+        </tr>
+        
+    </table>
+    </div>
+    <script>
+        var res=document.getElementById("result_id")
+        var s=""
+        function getnum(val){
+            if(val=='<'){
+                s=s.slice(0,s.length-1)
+            }
+            else if(val=='='){
+                s=(eval(s)).toString()
+            }
+            else{
+                s+=val;
+            }
+            res.innerHTML=s;
+            console.log(typeof(s))
+        }
+        function clearall(){
+            s="";
+            res.innerHTML=s;
+        }
+    </script>
+</body>
+</html>

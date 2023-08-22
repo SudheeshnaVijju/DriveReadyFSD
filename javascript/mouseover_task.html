@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+            font-family: cursive;
+        }
+        div{
+            position: relative;
+            top: 80px;
+            width: 400px;
+            height: 400px;
+            background-image: url('happy.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Sunday is a holiday</p>
+    </div>
+    <script>
+        setInterval(fun1,0)
+        function fun1(){
+        document.getElementsByTagName('div')[0].addEventListener('mouseover',fun);}
+        i=0;
+        function fun(){
+            i++;
+            if(i%2){
+                 document.getElementsByTagName('div')[0].style.backgroundImage="url('sad.jpg')";
+                 document.getElementsByTagName('p')[0].innerText="But we have online class";
+            }
+            else{
+                 document.getElementsByTagName('div')[0].style.backgroundImage="url('happy.jpg')";
+                 document.getElementsByTagName('p')[0].innerText="Sunday is a holiday";
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

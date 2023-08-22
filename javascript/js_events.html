@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        events:
+            1.inline (in html tag)
+            2.event properties in js (btn.event)
+            3.addEventListener
+
+        mouse events:
+            ->inline
+     -->
+     <!-- <button onclick="fun()" width="150px" height="30px">click me to change the bg-color</button>
+     <button id="b" width="150px" height="50px">click to rechange the bg-color</button> -->
+     <p id="p">this is content....</p>
+     <button id="a">click to hide me</button>
+     <button id="c">click to show</button>
+     <!-- <button id="a" onclick="hide()">click to hide me</button>
+     <button id="c" onclick="show()">click to show</button> -->
+    <script>
+        function fun(){
+            var n=prompt('enter color');
+            document.body.style.backgroundColor=n;
+        }
+        function fun1(){
+            var but=document.getElementsByTagName('button');
+            but[1].style.backgroundColor='skyblue';
+            but[0].style.backgroundColor='skyblue';
+        }
+        //document.getElementById("b").onclick=fun1;
+        var but=document.getElementsByTagName('button');
+        but[0].addEventListener('click',hide);
+        but[1].addEventListener('click',show);
+
+        function hide(){
+            document.getElementById('p').style.visibility="hidden";
+        }
+        function show(){
+            document.getElementById('p').style.visibility="visible";
+        }
+    </script>
+</body>
+</html>

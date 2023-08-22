@@ -1,0 +1,50 @@
+.c{
+    background-color: rgb(212, 239, 249);
+}
+body{
+    background-color: rgb(202, 229, 252);
+}
+.r{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid rgb(212, 239, 249);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);}
+.h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid rgb(212, 239, 249);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    
+}
+i{
+    font-size: 30px
+}
+.fa-pencil,.fa-lifre-ring,.fa-book-open{
+    color: rgb(0, 153, 255);
+}
+.fa-message,.fa-chart-pie,.fa-comments{
+    color: rgb(255, 217, 0);
+}
+.fa-chart-line,.fa-user,.fa-mug-hot{
+    color: green;
+}
+.fa-location-dot,.fa-rocket,.fa-signs-post{
+    color: red;
+}
+.down{
+    display: block;
+}

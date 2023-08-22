@@ -1,0 +1,120 @@
+body{
+    background-color: rgba(0, 0, 0, 0.149);
+    padding-top : 0px;
+    margin: 0;
+}
+
+#header{
+    height: 80px;
+    padding-right: 100px;
+}
+.head{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 80px;
+    width: 100vw;
+    gap: 400px;
+    background-color: rgb(60, 90, 70);
+    z-index: 1px;
+}
+.rthead{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    flex-direction: row;
+    float: right;
+    font-size: 20px;
+}
+.lthead{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 3, 1);
+    font-size: 30px;
+
+}
+a{
+    color: rgb(0, 3, 1);
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+#h1-6,#list{
+    font-size: 20px;
+}
+.headings{
+    color: rgba(16, 74, 55, 0.988);
+    font-family: sans-serif;
+}
+#h1-6{
+    background-color: rgba(63, 123, 103, 0.487);
+    padding: 10px;
+    
+}
+#list{
+    background-color:rgba(63, 123, 103, 0.487);
+}
+#table{
+    background-color:rgba(63, 123, 103, 0.487);
+    padding-top:40px ;
+    padding-bottom: 40px;
+}
+#img,#form{
+    background-color:rgba(63, 123, 103, 0.487);
+    padding-top:40px ;
+    padding-bottom: 40px;
+}
+#imgs{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    padding-left: 180px;
+}
+img{
+    width:250px;
+    height: 400px;
+    border-radius: 20px;
+}
+.l{
+    height: 330px;
+    width: vw;
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-top: 50px;
+    gap: 70px;
+}
+.l1{
+    height: 200px;
+    width: 200px;
+    background-color:rgba(63, 123, 103, 0.616);
+    padding:10px;
+}
+#formdiv{
+    background-color:rgba(63, 123, 103, 0.616);
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer{
+    background-color: rgb(60, 90, 70);
+    height: 70px;
+    width: vw;
+}
+#foot{
+    padding-top: 20px;
+    padding-right: 50px;
+    font-size: 20px;
+}
