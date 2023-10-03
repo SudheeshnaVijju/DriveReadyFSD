@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <h3>key/value pairs of an object</h3>
+    <script>
+        var data={
+            name:'sudhee',
+            rollno:'05f6',
+            phno:9951541832
+        }
+        for(i in data){
+            document.write(i+":"+data[i]+"<br>")
+        }
+        document.write("<b>adding one pair to object with key:email</b><br>");
+        var data={
+            name:'sudhee',
+            rollno:'05f6',
+            phno:9951541832,
+            email:'s@gamil.com'}
+        for(i in data){
+            document.write(i+":"+data[i]+"<br>")
+        }
+    </script>
+</body>
+</html>

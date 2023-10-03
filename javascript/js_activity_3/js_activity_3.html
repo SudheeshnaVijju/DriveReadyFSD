@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+	<h1>String Methods</h1>
+	<script type="text/javascript">
+		function getstr(str) {
+			document.write("<i>"+str+"</i><br><br>")
+		}
+		//substr() method
+		let name = 'DRIVEREADY'
+		getstr("substr method="+name.substr(0,5));
+		//substring() method
+		let name1 = 'developer'
+		getstr('substring of string ='+name1.substring(2,5));
+		//replace() method
+		let name2 = 'drive ready'
+		getstr('replace of string ='+name2.replace('drive','course'));
+		//search() method
+		let name3 = 'javascript'
+		getstr('search method ='+name3.search('script'));
+		//toLowerCase() method
+		let name4 = 'FULLSTACK'
+		getstr('toLowerCase method ='+name4.toLowerCase());
+        //toUpperCase() method
+		let name5 = 'fullstack'
+		getstr('toUpperCase method ='+name5.toUpperCase());
+		//indexOf() method
+		let name6 = 'books'
+		getstr('indexOf method ='+name6.indexOf('s')) 
+		//includes() method
+		let name7 = 'fullstack'
+        getstr('includes of string ='+name7.includes('ready'));
+        if(name7.includes('ready') == true){}else{}
+        //slice() method
+        let name8 = 'driveready'
+        getstr('slice method ='+name8.slice(1,4));
+        //concat() method
+        let name9 = 'FullStack'
+        getstr('concat method ='+name9.concat(name7,name8));
+        //lastIndexOf() method
+        let name10 = 'Technicalhub' 
+       	getstr('lastIndexOf method ='+name.lastIndexOf('c'));
+       	//charCodeAt() method
+       	let name11 = 'sudheeshna'
+       	getstr('charCodeAt method ='+name11.charCodeAt(4));
+       	//trim() method
+       	let name12 = '    javascript'
+       	getstr('char method ='+name12.trim()); 
+       	//char() method
+       	let name13 = 'FullStack'
+       	getstr('char method ='+name13.charAt(4));
+       	//valueOf() method
+       	let name14 = 'Bootstrap'
+       	getstr('valueOf method ='+name14.valueOf('p'));
+       	//split() method
+        let name15 = 'HTML&CSS,Bootstrap'
+		getstr('split method ='+name15.split('&'));
+		//toString() method
+		let name16=  'Hello World'
+		getstr('toString method = '+name16.toString());
+		//match() method
+		let name17= 'front end developer';
+		getstr('match method = '+name17.match('loper'));
+
+        </script>
+</body>
+</html>

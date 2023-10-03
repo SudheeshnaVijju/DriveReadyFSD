@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr><td>sno</td><td>name</td><td>rollno</td></tr>
+    </table>
+    <ol></ol><ul></ul>
+    <table border="1">
+        <tr><td>sno</td><td>name</td><td>rollno</td></tr>
+    </table>
+    
+    <script>
+        // const d=new Date();
+        // document.write(d+'<br>');
+        // document.write(d.getFullYear(),'<br>')
+        // document.write(d.getMonth()+1,'<br>')
+        // document.write(d.getDate(),'<br>')
+        // document.write(d.getDay(),'<br>')
+        // document.write(d.getHours(),'<br>')
+        // document.write(d.getMinutes(),'<br>')
+        // document.write(d.getSeconds(),'<br>')
+        // document.write(d.getMilliseconds(),'<br>')
+        let data=['sudhee','vasavi','subha'];
+        s=""
+        let arr=data.map(function(name,i)
+        {
+            return name
+        })
+//console.log(arr)
+        let data1=[
+            {
+                sno:1,
+                name:'vijju',
+                rollno:123
+            },
+            {
+                sno:2,
+                name:'noolu',
+                rollno:234
+            }
+        ]
+        let t=document.getElementsByTagName('table')[0];
+        let t1=document.getElementsByTagName('table')[1];
+        let l=document.getElementsByTagName('ol')[0];
+        let u=document.getElementsByTagName('ul')[0];
+        s=""
+        data1.map(function(ele,i){
+            let r=t.insertRow(i+1)
+            console.log(ele)
+            p=0;
+            for(j in ele){
+                let c=r.insertCell(p).innerHTML=ele[j]
+                s+="<li>"+ele[j]+"</li>"
+                p++;
+                console.log(ele[j])
+            }
+        })
+        l.innerHTML=s
+        u.innerHTML=s
+        data1.forEach(function(ele,i){
+            let r=t1.insertRow(i+1)
+            console.log(ele)
+            p=0;
+            for(j in ele){
+                let c=r.insertCell(p).innerHTML=ele[j]
+                s+="<li>"+ele[j]+"</li>"
+                p++;
+                console.log(ele[j])
+            }
+        })
+    </script>
+</body>
+</html>

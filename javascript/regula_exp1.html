@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Regular Expressions</h2>
+    <input type="text" name="" id="in_id">
+    
+    <button onclick="check_num()">check validity</button>
+    <span id="msg"></span><br>
+    <input type="text" id="in_em">
+    <button onclick="check_email()">check email validity</button>
+    <span id="msg1"></span>
+    <script>
+        function check_num(){
+            let val=document.getElementById('in_id').value;
+            let s=document.getElementById('msg')
+            let re=/^[0-9]{10}$/;
+            if(re.test(val)){
+                s.style.color="green";
+                s.innerText="VALID NUMBER"
+            }
+            else{
+                s.style.color="red";
+                s.innerText="INVALID NUMBER"
+            }}
+            function check_email(){
+                let val=document.getElementById('in_em').value;
+                let s=document.getElementById('msg1')
+                let re=/^[a-z]+$/;
+                re=/^[A-Z]+$/;
+                re=/^[a-zA-Z]+$/;
+                re=/^[a-zA-Z0-9]+$/;
+                re=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+                if(re.test(val)){
+                s.style.color="green";
+                s.innerText="VALID E-MAIL"
+                }
+                else{
+                    s.style.color="red";
+                    s.innerText="INVALID E-MAIL"
+                }
+
+            }
+        
+    </script>
+</body>
+</html>

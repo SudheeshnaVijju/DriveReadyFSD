@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <h3>
+        Multiplication Table of given number
+    </h3>
+    <script>
+        var a=prompt("Enter number:")
+        var n=prompt("Enter no.of times u want the table")
+        document.write(`The Multiplication of ${a} upto ${n} times is:<br>`)
+        for(i=1;i<=parseInt(n);i++){
+            document.write(a,' x ',i,' = ',a*i,'<br>' )
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+<body>
+    <h3>Fibonacci series</h3>
+    <script>
+        var n=parseInt(prompt("enter number for fibonacci series"))
+        x=0
+        y=1;
+        document.write(`The fibonacci series upto ${n} is:<br>`)
+        if(n==1) document.write(x)
+        else if(n==2) document.write(y);
+        else{
+            while(n){
+                t=x;
+                document.write(x," ")
+                x=x+y;
+                y=t;
+                n--;
+            }
+        }
+    </script>
+</body>
+</html>

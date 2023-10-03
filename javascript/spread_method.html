@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4]
+        let arr1=[5,6,7,8]
+        console.log(arr)
+        console.log(...arr)//-->1st way
+        console.log([98,23,arr])
+        console.log([98,23,...arr])//--->2nd way
+        console.log([arr,arr1])
+        console.log([...arr,...arr1])
+        console.log([2,...arr,90,89,78,...arr1])
+        let str='sudheeshna vijju'
+        console.log(str);
+        console.log(...str)
+
+        function sum(a,b,c,d){
+            return a+b+c+d;
+        }
+        console.log(sum(...arr))
+    </script>
+</body>
+</html>

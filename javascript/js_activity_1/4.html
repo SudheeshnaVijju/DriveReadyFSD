@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <h3>
+        even and odd sum of an array
+    </h3>
+    <script>
+        var arr=(prompt("enter array elements")).split(' ')
+        var e=0,o=0;
+        document.write("Given array is: ")
+        for (i in arr){
+            document.write(arr[i]," ")
+            if(parseInt(arr[i])%2==0){
+                e+=parseInt(arr[i])
+            }
+            else{
+                o+=parseInt(arr[i])
+            }
+        }
+        document.write("<br>The even elements sum is:",e)
+        document.write("<br>The odd elements sum is:",o)
+    </script>
+</body>
+</html>

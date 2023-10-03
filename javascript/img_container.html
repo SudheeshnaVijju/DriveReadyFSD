@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main,.buts{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .buts{
+            flex-direction: column;
+            
+        }
+        .div1,.div2{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 300px;
+            border: 2px solid black;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .d1,.d2,.d3,.a1,.a2,.a3{
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        .d1{
+            background-image: url('1.jpg');
+            background-size: cover;
+        }
+        .d2{
+            background-image: url('2.jpg');
+            background-size: cover;
+        }
+        .d3{
+            background-image: url('3.jpg');
+            background-size: cover;
+        }
+        .a1,.a2,.a3{
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="div1">
+        <div class="d1" onclick="fun('0')"></div>
+        <div class="d2" onclick="fun('1')"></div>
+        <div class="d3" onclick="fun('2')"></div> 
+    </div>
+    <div class="buts">
+    <button class="b1" onclick="fun1()">-></button>
+    <button class="b2" onclick="fun2()"><-</button></div>
+    <div class="div2">
+        <div class="a3" onclick="fun3('2')"></div>
+        <div class="a2" onclick="fun3('1')"></div>
+        <div class="a1" onclick="fun3('0')"></div>
+    </div>
+    </div>
+    <script>
+        var a,c=[],f=[],p=0,i=0 ;
+        function fun(n){
+            a=parseInt(n)+1;
+            t=a
+            if(i>=3){
+                t=parseInt(n)+1;
+                a=f[n];
+            }
+        }
+        function fun3(n){
+            t=parseInt(n)+1
+            a=c[n];
+        }
+        function fun1(){
+            for(var k=1;k<=3;k++){
+                var d=document.getElementsByClassName('a'+k)[0];
+                const b = getComputedStyle(d).backgroundImage;
+                if(b=='none')
+                {document.getElementsByClassName('a'+k)[0].style.backgroundImage="url('"+a+".jpg')";
+                document.getElementsByClassName('d'+t)[0].style.backgroundImage="none";
+                c[k-1]=a
+                i++
+                break;
+            }
+        }}
+        function fun2(){
+            for(var k=3;k>0;k--){
+                var d=document.getElementsByClassName('d'+k)[0];
+                const b = getComputedStyle(d).backgroundImage;
+                if(b=='none')
+                {document.getElementsByClassName('d'+k)[0].style.backgroundImage="url('"+a+".jpg')";
+                document.getElementsByClassName('a'+t)[0].style.backgroundImage="none";
+                f[k-1]=a
+                break;
+            }
+            }
+        }
+    </script>
+</body>
+</html>

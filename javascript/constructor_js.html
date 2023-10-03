@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Student{
+        constructor(n,ln,clg,rno){
+            this.name=n;
+            this.lastname=ln;
+            this.clg=clg;
+            this.rno=rno;
+
+        }
+    }
+    let ob=new Student('sudhee','vijju','AEC','21A91A05F6');
+    let ob1=new Student('vasavi','noolu','AEC','21A91A05G9')
+    console.log(ob.name)
+    document.write(ob.name,"<br>")
+    document.write(ob.lastname,"<br>")
+    document.write(ob.clg,"<br>")
+    document.write(ob.rno,"<br><br>")
+    document.write(ob1.name,"<br>")
+    document.write(ob1.lastname,"<br>")
+    document.write(ob1.clg,"<br>")
+    document.write(ob1.rno,"<br><br>")
+
+    class car{
+        constructor(com,model,rate,rating){
+            this.com=com;
+            this.model=model;
+            this.rate=rate;
+            this.rating=rating;
+            this.getcost=function(){
+                return this.rate;
+            }
+        }
+    }
+    let car1=new car('Audi','0001','1cr','8/10')
+    document.write(car1.com,"<br>")
+    document.write(car1.model,"<br>")
+    document.write(car1.rate,"<br>")
+    document.write(car1.rating,"<br><br>")
+    document.write("THE COST OF CAR IS:",car1.getcost(),"<br>");
+    </script>
+</body>
+</html>

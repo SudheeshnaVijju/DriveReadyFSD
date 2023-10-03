@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" cellspacing="0" >
+        <tr>
+        <td>d</td>
+        <td>r</td>
+        <td>i</td>
+        <td>v</td>
+        <td>e</td>
+        <td>&nbsp;</td>
+        <td>r</td>
+        <td>e</td>
+        <td>a</td>
+        <td>d</td>
+        <td>y</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            </tr>
+            <tr>
+                <td>-11</td>
+                <td>-10</td>
+                <td>-9</td>
+                <td>-8</td>
+                <td>-7</td>
+                <td>-6</td>
+                <td>-5</td>
+                <td>-4</td>
+                <td>-3</td>
+                <td>-2</td>
+                <td>-1</td>
+                </tr>
+    </table>
+    <script>
+        // let str='string';
+        // let str1=new String('new string')
+        // document.write(str+"<br>")
+        // document.write(str1+"<br>")
+        // // document.write(typeof(str),"<br>")
+        // // document.write(typeof(str1),"<br>")
+        // document.write("<b>"+str+"</b>")
+        let str='drive ready'
+        let str1='          sudhee vijjuu     '
+        document.write("lenght:"+str.length+"<br>")
+        document.write("indexing:"+str[2]+"<br>") 
+        document.write("chatAt method:"+str.charAt(3)+"<br>")
+        document.write("indexOf method:"+str.indexOf('y')+"<br>")
+        document.write("lastIndexOf method:"+str.lastIndexOf('d')+"<br>")
+        document.write("trim() method:"+str1.trim()+"<br>")//remove extraspaces in front and back
+        document.write("toLowerCase method:"+str.toLowerCase()+"<br>")
+        document.write("toUpperCase method:"+str.toUpperCase()+"<br>")
+        document.write("concat method:"+str.concat(str1)+"<br>")
+        document.write("includes method:"+str.includes('ready')+"<br>")
+        console.log(str.split("r"))
+        document.write("startswith method:"+str.startsWith('s')+"<br>")
+        document.write("endswith method:"+str.endsWith('y')+"<br>")
+        document.write("slice method:"+str.slice(2,5)+"<br>")
+        document.write("slice method:"+str.slice(-2)+"<br>")
+        document.write("sudstring method:"+str.substring(4,1)+"<br>")
+        document.write("sudstring method:"+str.substring(2,10)+"<br>")
+        document.write("sudstr method:"+str.substr(4,3)+"<br>")//index,lenght we want
+    </script>
+</body>
+</html>

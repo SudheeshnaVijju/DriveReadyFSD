@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Methods</title>
+</head>
+<body>
+</body>
+	<script type="text/javascript">
+		//1.Map()
+		document.write("1.MAP METHOD"+"<br>")
+		let students =[{
+			'name':'sudheeshna vijju',
+			'rollno':'21a91a05f6'
+		},{
+			'name':'vasavi',
+			'rollno':'21a91a05g9'
+		}];
+		students.map(test)
+		function test(details,i,arr){
+		document.write(details.name+" "+details.rollno+"<br>");
+		}
+
+		document.write("<br>")
+        document.write("<br>");
+		//2.filter();
+		document.write("2.FILTER METHOD"+"<br>")
+		let nums=[10,-1,20,-3,40,-5];
+
+		let neg_nums=nums.filter(function(ele){
+			return ele<0;
+		})
+		document.write(neg_nums)
+
+		let pos_nums=nums.filter(function(ele,i,arr){
+			return ele>0;
+		})
+		document.write("<br>"+pos_nums)
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		// 3.sort();
+		document.write("3.SORT METHOD"+"<br>")
+		let names=['banana','apple','orange','grape','mango'];
+		document.write("Original Names:")
+		document.write(names)
+		document.write("<br>")
+		document.write("sorted Names:")
+		document.write(names.sort())
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//4.forEach
+		document.write("4.FOREACH"+"<br>")
+		let names1=[1,2,3,4,5];
+		document.write("before forEach:")
+		document.write(names1+"<br>")
+		names1.forEach(test1);
+		function test1(total,index,arr1){
+			var increment=total*10;
+			arr1[index]=total+increment;
+		}
+		document.write("AFTER FOREACH METHOD")
+		document.write(names1);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//5.concat
+		document.write("5.CONCATINATION"+"<br>")
+		let s1="SUDHEE";
+		let s2='vijju';
+		document.write(s1+"<br>")
+		document.write(s2+"<br>")
+		document.write(s1.concat(s2))
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+		//6.every
+		document.write("6.EVERY"+"<br>")
+		let std=[55,12,87,54,64];
+		let fs=std.every(function(score){
+			return score <35;
+		})
+		document.write(fs);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//7.some
+		document.write("7.SOME"+"<br>")
+		let std1=[55,12,87,54,64];
+		let fs1=std1.some(function(score){
+			return score <35;
+		})
+		document.write(fs1);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//8.includes
+		document.write("8.INCLUDES"+"<br>")
+		let text = "I love html";
+		document.write("before includes:")
+		document.write(text+"<br>")
+		document.write("after includes:")
+		let result = text.includes("and bootstrap");
+		document.write(result+" "+"includes() is not supported in Internet Explorer.")
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//9.join
+		document.write("9.JOIN"+"<br>")
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		let test2 = fruits.join();
+		document.write(test2)
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//10.reduce
+		document.write("10.REDUCE"+"<br>")
+		const numbers = [1, 2, 3, 4, 5];
+		document.write(numbers+"<br>")
+		const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+		document.write(sum);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//11.find
+		document.write("11.FIND"+"<br>")
+		const numbers1 = [1, 3, 5, 4, 7, 2, 8];
+		document.write(numbers1+"<br>")
+		const firstEven = numbers1.find(number => number % 2 === 0);
+
+		document.write(firstEven);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//12.findIndex
+		document.write("12.FINDINDEX"+"<br>")
+		const numbers2 = [1, 3, 5, 4, 7, 2, 8];
+		document.write(numbers2+"<br>")
+		const res = numbers2.findIndex(number => number % 2 === 0);
+
+		document.write(res);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//13.indexOf
+		document.write("13.INDEXOF"+"<br>")
+		const names4 = ['apple', 'banana', 'orange', 'grape'];
+		document.write(names4+"<br>")
+		const Index = names4.indexOf('pineapple');
+		document.write(Index);
+
+
+		document.write("<br>");
+		document.write("<br>");
+document.write("<br>");
+
+		//14.fill
+		document.write("14.FILL"+"<br>")
+		const numbers3 = [1, 2, 3, 4, 5];
+
+		const filledArray = numbers3.fill(0);
+		console.log(filledArray); 
+
+		const partialFilledArray = numbers3.fill(9, 1, 4);
+		document.write(partialFilledArray); 
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+
+		//15.slice
+		document.write("15.SLICE METHOD"+"<br>")
+		const originalArray = [1, 2, 3, 4, 5];
+		const newArray = originalArray.slice(1, 4);
+
+		document.write(newArray); 
+
+		document.write("<br>");
+		document.write("<br>");
+document.write("<br>");
+		//16.reverse
+		document.write("16.REVERSE"+"<br>")
+		const array = [1, 2, 3, 4, 5];
+		const reversedArray = array.slice().reverse();
+		document.write(array+"<br>");
+		document.write(reversedArray); 
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+		//17.push
+		document.write("17.PUSH"+"<br>")
+		const array4 = [1, 2, 3];
+		document.write(array4);
+		array4.push(4, 5, 6); 
+		document.write(array4);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+		//18.pop
+		document.write("18.POP"+"<br>")
+		const array5 = [1, 2, 3];
+		document.write(array5+"<br>");
+		array5.pop(2); 
+		document.write(array5);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+		//19.shift
+		document.write("19.SHIFT"+"<br>")
+		const array6= [1, 2, 3, 4, 5];
+		const shiftedValue = array6.shift();
+		document.write(array6+"<br>");
+		document.write(shiftedValue);
+
+		document.write("<br>");
+		document.write("<br>");
+        document.write("<br>");
+		//20.unshift
+		document.write("20.UNSHIFT"+"<br>")
+		const array7= [2, 3, 4, 5];
+		document.write(array7+"<br>");
+		array7.unshift(1);
+		document.write(array7);
+	</script>
+</html>

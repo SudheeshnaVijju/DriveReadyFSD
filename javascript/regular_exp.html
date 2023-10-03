@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Regular Expressions</h2>
+    <script>
+        // let str='sudhee'
+        // let re=/batch/;
+        // let op=re.test("fsd batch");
+        // // if(op==true) {console.log('VALID')}
+        // // else {console.log("NOT VALID")}
+
+        // let re1=/batch/i;
+        // let op1=re1.test("fullstack BATCH");
+        // console.log(op1);
+
+        // let re3=/^s/;
+        // let op2=re3.test("sudhee");
+        // let op3=re3.test("vijjus");
+        // console.log(op2)
+        // console.log(op3)
+
+        // let re4=/batch/g; //-->g for multiple indexes
+        // res=re4.exec("full stack batch course batch")
+        // console.log(res);
+        // console.log(res.index)
+        // res=re4.exec("full stack batch course batch")
+        //console.log(res.index)
+        re2=/^[0-9]{10}/   //-->it accepts 10 and above lenghts[10,11,12....]
+        re1=/^[0-9]{10}$/  //-->for phone number
+        re=/^9[0-9]{9}$/    //-->starts with 9 only 
+        output=re.test("9951541832")
+        console.log(output)
+    </script>
+</body>
+</html>
